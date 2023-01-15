@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Work Sans";
+  
 }
 :root{
     --primary-color:#ff900e; 
@@ -54,7 +55,7 @@ header{
 }
 .hero-discription{
     width: 800px;
-    height: 225px;
+    height: 200px;
     margin: 0 auto ;
 }
 .hero-title{
@@ -66,7 +67,7 @@ header{
     font-size: 16px;
     font-weight: 500;
     text-align: center;
-    padding: 20px 0 5px 0;
+    padding: 20px 0 0 0;
 }
 .button-top{
     width: 500px;
@@ -201,4 +202,38 @@ header{
     font-size: 20px;
     text-align: center;
     color: white;
+}
+/* facts section */
+.some-facts-section{
+    padding: 0 0 50px 0;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.facts-title{
+    font-size: 35px;
+    font-weight: 600;
+}
+.facts-sub-title{
+    font-size: 16px;
+    line-height: 1.2em;
+    padding: 25px 0;
+}
+.facts-count-downs{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    justify-items: center;
+    margin: 50px auto;
+    
+}
+.facts-count-down{
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
 }

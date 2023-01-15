@@ -237,7 +237,7 @@ header{
     height: 150px;
     width: 150px;
 }
-:hover .facts-count-down{
+.facts-count-down:hover {
     box-shadow: 5px 5px 5px var(--primary-color);
     cursor: pointer;
 }
@@ -267,4 +267,16 @@ header{
 .sponsor-icon{
     width: 100px;
     filter: grayscale();
+}
+/* footer section */
+.footer-section{
+    max-width: 1150px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    margin: 50px auto;
+}
+.footer-copy-rigt{
+    font-size: 16px;
+    padding: 25px;
+    text-align: center;
 }

@@ -4,6 +4,12 @@
     font-family: "Work Sans";
   
 }
+html,body{
+    overflow-x: hidden;
+}
+.hidden{
+    display: none;
+}
 :root{
     --primary-color:#ff900e; 
     --secondary-color: #fff4e7;
@@ -21,10 +27,6 @@ header{
     height: vh;
     width: 100%;
     background-color: var(--secondary-color);
-}
-.header-section{
-    /* width: 1150px;
-    margin: 0 auto; */
 }
 .nav-bar{
     display: flex;
@@ -74,8 +76,6 @@ header{
     height: 100px;
     position: relative;
     margin: auto;
-   
-    
 }
 .hero-btn{
     background-color: var(--primary-color);
@@ -224,7 +224,7 @@ header{
     grid-template-columns: repeat(4 ,1fr);
     justify-items: center;
     margin: 50px auto;
-    
+
 }
 .facts-count-down{
     border: 1px solid var(--primary-color);
@@ -236,10 +236,14 @@ header{
     border-radius: 10px;
     height: 150px;
     width: 150px;
+    transition: height .5s, width .5s ease, transform .5s ease ;
 }
 .facts-count-down:hover {
     box-shadow: 5px 5px 5px var(--primary-color);
     cursor: pointer;
+    width:160px ;
+    height:160px;
+    
 }
 /* Sponsor section */
 .sponsor-section{
@@ -273,10 +277,159 @@ header{
     max-width: 1150px;
     width: 100%;
     background-color: var(--secondary-color);
-    margin: 50px auto;
+    margin: 80px auto 0;
 }
 .footer-copy-rigt{
     font-size: 16px;
     padding: 25px;
     text-align: center;
 }
+/* Media query */
+/* header responsive */
+@media (min-width: 200px) and (max-width: 576px) {
+    .header-logo{
+    }
+    header{
+        height: vh;
+        width: 100%;
+        background-color: white;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 0;
+        margin: 0 auto;
+        width: 575px;
+        padding: 15px 5px
+    }
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-menu li{
+        list-style: none;
+        padding-bottom: 20px;
+        font-size: 18px;
+        font-weight:500;
+    }
+    .hero-discription{
+        width: 100%;
+        height: 200px;
+        margin: 0 auto ;
+    }
+    .hero-section{
+        width: 100%;
+        margin: 50px auto;
+       
+    }
+    .hero-title{
+        font-size: 30px;
+    }
+    .hero-discription{
+        margin: 0;
+        font-size: 15px;
+    }
+    /* header section end */
+    /* our features section */
+    .features{
+        width: 100%;
+    }
+    .features-section {
+    display: flex;
+    flex-direction: column;
+    }
+    .freatures-images{
+        padding-top: 20px;
+        padding-left: 15px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .featutes-image{
+        width: 100%;
+        padding-bottom: 10px;
+        
+    }
+    .features-details{
+        padding: 30px;
+    }
+    .features-title{
+        font-size: 30px;
+    }
+    .features-discription{
+        font-size: 15px;
+    }
+    /* features points */
+    .features-right-side {
+        padding: 20px;
+    }
+    .right-side-image{
+        width: 100%;
+    }
+    .count-down{
+    position: relative;
+    top: -80px;
+    right: 0px;
+    }
+    .left-side-title{
+        font-size: 30px;
+    }
+    .features-left-side {
+        padding: 20px;
+    }
+
+    .features-points{
+        display: flex;
+        flex-direction:column-reverse;
+        max-width: 100%;
+        
+    }
+    /* our fact section */
+    .some-facts-section{
+        width: 100%;
+        padding: 30px;
+    }
+    .facts-title{
+        font-size: 25px;
+    }
+    .facts-sub-title{
+        font-size: 15px;
+    }
+    .facts-count-downs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin: 50px auto;
+        gap: 20px;
+    }
+    /* our sponsor section */
+    .sponsor-section{
+        padding: 30px;
+    }
+    .sponsor-title{
+        font-size: 25px;
+    }
+    .sponsor-sub-title{
+        font-size: 15px;
+    }
+    .sponsor-logos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin: 0 auto;
+    }
+    .sponsor-icon{
+        padding: 20px;
+    }
+    .footer-section{
+        margin-top: 50px;
+    }
+    .footer-copy-rigt{
+        font-size: 14px;
+    }
+}
+ 
+    
+    
+    
+  

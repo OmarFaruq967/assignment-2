@@ -245,6 +245,67 @@ header{
     height:160px;
     
 }
+/* blog section */
+/* blog section */
+.blog{
+    /* max-width: 1150Px; */
+}
+.blog-heading{
+    font-size:40px;
+    font-weight: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.blog-sub-heading{
+    font-size:20px;
+    font-weight: 600px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.my-blogs{
+    max-width: 1150Px;
+    display: flex;
+    margin:0 auto;
+    gap: 30px;
+    /* box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.206) ; */
+}  
+.my-blog{
+    width: 265px;
+    background-color: rgba(226, 226, 226, 0.405);
+    border-radius: 10px;
+    box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.206) ;
+
+}
+.blog-image{
+    width: 265px;
+    height: 180px;
+    padding-bottom: 15px;
+    border-radius: 10px 10px 0 0;
+
+}
+.blog-title{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 15px 10px 15px;
+
+}
+.blog-summary{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 15px 10px 15px;
+
+}
+.read-blog{
+    color: #FD6E0A;
+    background-color: #ffffff00;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 20px;
+
+}
 /* Sponsor section */
 .sponsor-section{
     max-width: 1150px;
